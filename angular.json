@@ -7,12 +7,39 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true,
+          "inlineStyle": false,
+          "inlineTemplate": false
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true,
+          "flat": false
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true,
+          "flat": false
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true,
+          "flat": false
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true,
+          "flat": false
+        },
+        "@schematics/angular:resolver": {
+          "skipTests": true,
+          "flat": false
+        },
+        "@schematics/angular:service": {
+          "skipTests": true,
+          "flat": false
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "apnidukan",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -20,9 +47,7 @@
             "outputPath": "dist/apnidukan_frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -79,10 +104,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
