@@ -10,7 +10,8 @@
           "style": "scss",
           "skipTests": true,
           "inlineStyle": false,
-          "inlineTemplate": false
+          "inlineTemplate": false,
+          "viewEncapsulation": "Emulated"
         },
         "@schematics/angular:directive": {
           "skipTests": true,
@@ -76,7 +77,12 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "sourceMap": false,
+              "optimization": true,
+              "extractLicenses": true,
+              "namedChunks": false,
+              "aot": true
             },
             "development": {
               "optimization": false,

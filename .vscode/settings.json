@@ -1,0 +1,78 @@
+{
+  // Enable spell checking
+  "cSpell.words": ["Apnidukan", "titlecase"],
+  "cSpell.enabled": true,
+  "cSpell.language": "en, en-GB, en-US",
+  "cSpell.ignoreWords": ["ng", "ngrx", "rxjs", "rxjs5"],
+
+  // Enable auto-save functionality
+  "files.autoSave": "onWindowChange",
+  "files.autoSaveDelay": 5000,
+
+  // Enable ESLint fixing on save and organizing imports
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  // Set default formatter to Prettier for consistent formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // Enable bracket pair colorization
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  // Hide unnecessary UI elements for a distraction-free environment
+  // "workbench.statusBar.visible": false,
+
+  // Enable Git smart commit and disable sync confirmation
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+
+  // Enable linting for HTML files (Angular templates)
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
+
+  // Automatically close brackets and quotes
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+
+  // Enable word wrap for better readability of long lines of code
+  "editor.wordWrap": "on",
+
+  // Disable preview mode for opened files
+  "workbench.editor.enablePreview": false,
+
+  // Enable line numbers for better navigation and debugging
+  "editor.lineNumbers": "on",
+
+  // Auto-format on save for HTML, CSS, SCSS
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // Enable auto-insertion of final newline and trimming trailing whitespace
+  "files.saveConflictResolution": "askUser",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // Enable TypeScript parameter hints and quick suggestions
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.parameterHints.enabled": true,
+
+  // Enable IntelliSense and code suggestions
+  "typescript.preferences.importModuleSpecifier": "relative"
+}
