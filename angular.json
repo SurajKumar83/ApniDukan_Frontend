@@ -81,13 +81,21 @@
               "sourceMap": false,
               "optimization": true,
               "extractLicenses": true,
-              "namedChunks": false,
-              "aot": true
+              "namedChunks": true,
+              "aot": true,
+              "baseHref": "/prod/"
             },
             "development": {
+              "sourceMap": true,
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "namedChunks": true,
+              "baseHref": "/dev/"
+            },
+            "staging": {
+              "outputHashing": "media",
+              "extractLicenses": false,
+              "baseHref": "/staging/"
             }
           },
           "defaultConfiguration": "production"
@@ -116,7 +124,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [
