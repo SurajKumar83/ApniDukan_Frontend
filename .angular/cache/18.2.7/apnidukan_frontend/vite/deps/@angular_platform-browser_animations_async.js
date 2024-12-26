@@ -1,9 +1,9 @@
 import {
   DomRendererFactory2
-} from "./chunk-4LRIOLOE.js";
+} from "./chunk-HNFVE3SF.js";
 import {
   DOCUMENT
-} from "./chunk-U6CCN3M5.js";
+} from "./chunk-6CCXCDNG.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
@@ -49,7 +49,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const loadFn = () => this.moduleImpl ?? import("./browser-LU7GLWLY.js").then((m) => m);
+    const loadFn = () => this.moduleImpl ?? import("./browser-QIKGDPLC.js").then((m) => m);
     let moduleImplPromise;
     if (this.loadingSchedulerFn) {
       moduleImplPromise = this.loadingSchedulerFn(loadFn);
